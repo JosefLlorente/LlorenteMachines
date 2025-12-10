@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/style.css">
+  <title>Machines</title>
+</head>
+<body>
+  <div class="taskbar">
+    <ul class="taskbar-items">
+      <li class="taskbar-item" ><a href="#replaceAll">Replace All</a></li>
+      <li class="taskbar-item"><a href="#countCharacters">Count Characters</a></li>
+    </ul>
+    <div class="theme-toggle">☀️</div>
+    <script type="module" src="/src/scripts/toggle.js"></script>
+  </div>
+
+  <div class="content">
+
+    <section id="replaceAll">
+      <h4 id="replaceAll">Machine Problem 1: Replace All</h4>
+      <div class="container">
+        <textarea class="inputText" id="replaceAllInput" placeholder="Enter your text here..."></textarea>
+        <textarea class="inputText" id="replaceAllOutput" placeholder="" disabled></textarea>
+        <script type="module" src="/src/scripts/machineA.js"></script>
+      </div>
+    </section>
+
+    <section id="countCharacters">
+      <h4 id="countCharacters">Machine Problem 4: Count Characters</h4>
+      <div class="container">
+        <textarea class="inputText" id="countCharactersInput" placeholder="Enter your text here..."></textarea>
+        <p id="charCount">Characters: 0</p>
+        <script type="module" src="/src/scripts/machineD.js"></script>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
