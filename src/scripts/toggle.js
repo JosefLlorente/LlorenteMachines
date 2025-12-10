@@ -18,3 +18,7 @@ themeToggle.addEventListener('click', () => {
         localStorage.setItem('theme', 'dark');
     }
 });
+
+if (!window.location.hash) {
+    window.location.hash = '#replaceAll';
+}
